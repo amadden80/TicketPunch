@@ -5,8 +5,8 @@
 <% end %>
 
 
+
 <input id='movie_search' type="text" placeholder='...movie title'>
-<div id='movie-display'></div>
 
 <div id="container">
     <div class="loader">
@@ -17,6 +17,10 @@
         <span></span>
     </div>
 </div>
+
+<div id='movie-display'></div>
+
+
 
 <table>
   <% @user.watch_list_entries.each do |entries| %>

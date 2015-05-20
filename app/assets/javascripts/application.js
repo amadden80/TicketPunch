@@ -16,7 +16,3 @@
 //= require underscore
 //= require_tree .
 //= require flat-ui.min.js
-$(document).ready(function(){
-  $('.loader').hide
-
-})

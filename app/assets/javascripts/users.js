@@ -9,6 +9,7 @@ $(function(){
 
 
   $('#movie_search').on('keyup', function(){
+    $( "#container" ).hide(700);
 
     var field = $(this);
 
