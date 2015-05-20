@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <div class="row">
   <div class="colum1 col-xs-6">
@@ -28,3 +29,24 @@
       </div>
     </div><!-- colum2 End -->
 </div><!-- row end-->
+=======
+<h1>Ticket Punch</h1>
+<h2>
+  The fun friendly way to organize your movie watch list.
+</h2>
+
+
+<% if current_user %>
+  <nav>
+    <%= form_tag('/profile', method: 'get') do %>
+      <%= submit_tag "Profile" %>
+    <% end %>
+    <br>
+    <%= form_tag('/sessions', method: 'delete') do %>
+      <%= submit_tag "Log-Out" %>
+    <% end %>
+  </nav>
+<% end %>
+
+<%= yield %>
+>>>>>>> 2d294b0ad7fbe52efaf4b3e120c6e21d02ea395c
