@@ -5,18 +5,19 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
+  <div class="container-fluid">
 
-  <% unless current_user %>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/users/new">Sign-Up</a>
-      <a href="/users/log-in">Log-In</a>
-    </nav>
-  <% end %>
+    <div class="row">
+      <div class="topBar col-md-9 col-md-push-3"></div>
+      <div class="sideBar col-md-3 col-md-pull-9"></div>
+    </div>
 
-<%= yield %>
+      <%= yield %>
 
+  </div> <!-- wrapper End -->
 </body>
 </html>

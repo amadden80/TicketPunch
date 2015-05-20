@@ -1,3 +1,55 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$asset-slate: #2C3E4F;
+$asset-sky: #3E98D3;
+$asset-dusk: #965DA5;
+$asset-mistyforest: #2CB89A;
+$asset-wenge: #231F20;
+$asset-font:'Lato', sans-serif;
+
+h1, h2, h3{
+  font-family: $asset-font;
+  text-align: center;
+}
+
+.col-md-pull-9{
+  background-color: $asset-mistyforest;
+  height: 100%;
+  float: left;
+}
+
+.col-md-9 {
+  background-color: $asset-dusk;
+  height: 100px;
+}
+
+.container-fluid{
+  // border:2px dashed green;
+  height: 800px;
+  width: 100%;
+}
+
+.col-xs-6{
+  // border:2px dashed black;
+}
+
+.quoteBox{
+  border: 2px solid black;
+  height: 380px;
+}
+
+// .colum1{
+//   height: 200px;
+//   width:50%;
+//   border:2px dashed black;
+//   float:left;
+//   position: relative;
+// }
+//
+// .colum2{
+//   border:2px dashed black;
+//   float: left;
+//   position: relative;
+// }
