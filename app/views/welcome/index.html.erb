@@ -2,3 +2,18 @@
 <h2>
   The fun friendly way to organize your movie watch list.
 </h2>
+
+
+<% if current_user %>
+  <nav>
+    <%= form_tag('/profile', method: 'get') do %>
+      <%= submit_tag "Profile" %>
+    <% end %>
+    <br>
+    <%= form_tag('/sessions', method: 'delete') do %>
+      <%= submit_tag "Log-Out" %>
+    <% end %>
+  </nav>
+<% end %>
+
+<%= yield %>
